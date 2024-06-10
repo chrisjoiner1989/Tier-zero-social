@@ -1,0 +1,131 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Light Mode */
+body.light-mode {
+  background: #fff;
+  color: #000;
+}
+
+header.light-mode {
+  background: #333;
+  color: #fff;
+}
+
+.container.light-mode,
+.deck-container.light-mode,
+.tournament-container.light-mode,
+.dnd-container.light-mode {
+  background: #f9f9f9;
+  color: #000;
+}
+
+.post.light-mode {
+  background: #ddd;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background: #121212;
+  color: #e0e0e0;
+}
+
+header.dark-mode {
+  background: #1c1c1c;
+  color: #e0e0e0;
+}
+
+.container.dark-mode,
+.deck-container.dark-mode,
+.tournament-container.dark-mode,
+.dnd-container.dark-mode {
+  background: #1e1e1e;
+  color: #e0e0e0;
+}
+
+.post.dark-mode {
+  background: #333;
+}
+
+/* General Styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  padding: 20px;
+  display: none;
+}
+
+.container.active {
+  display: block;
+}
+
+.deck-container,
+.tournament-container,
+.dnd-container {
+  display: none;
+  padding: 20px;
+}
+
+.deck-container.active,
+.tournament-container.active,
+.dnd-container.active {
+  display: block;
+}
+
+.card-pool li,
+.deck-container ul,
+.tournament-container ul,
+.dnd-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.card-pool li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 5px;
+}
+
+.card-pool li img {
+  width: 50px;
+  height: auto;
+}
+
+button {
+  cursor: pointer;
+  padding: 5px 10px;
+  margin-top: 10px;
+  display: block;
+}
